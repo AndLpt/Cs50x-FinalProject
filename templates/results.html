@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock%}
+
+{% block rightcolumn %}
+<div class="ind">
+<table>
+    {% for elem in course_list %}
+    <tr>
+        <th>course</th>
+        <th>semester</th>   
+        <th>year</th>
+        <th>total</th>
+    </tr>
+    <tr>
+        <td>{{ elem["course"] }}</td>
+        <td>{{ elem["semester"] }}</td>
+        <td>{{ elem["year"] }}</td>
+        <td>{{ elem["total"] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}

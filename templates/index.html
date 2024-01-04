@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index   
+{% endblock %}
+
+{% block rightcolumn %}
+  <div class="ind">
+    <form action="/" method="post" id="myform">
+      <input type="number" min="0" placeholder="year" name="year" class="inp">
+      <select name="action" id="actselect" style="border-radius:5px">
+        <option disabled selected>Action</option>
+        <option value="add">Add</option>
+        <option value="delete">Delete</option>
+      </select>
+    </form>
+  </div>
+{% endblock %}
+
+
+

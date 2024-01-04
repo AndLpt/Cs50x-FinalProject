@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block rightcolumn %}
+<div class="ind" style="height:400px; margin-top:100px">
+<form action="/passwordchanging" method="post"> 
+    <div>
+        <input name="newpassword" type="password" placeholder="New Password" class="inp">
+    </div>
+    <div>
+        <input name="confirmation" type="password" placeholder="New Password (again)" class="inp">
+    </div>
+    <div>
+        <button type="submit" class="bttn" style="position: relative; left: 30px;">Change password</button>
+    </div>
+</form>
+
+<form action="/settings" method="post">
+    <div>
+        <input name="question1" type="text" placeholder="What is your city of birth?" size="23" class="inp" style="position: relative; left: 75px;">
+    </div>
+    <div>
+        <input name="answer1" type="text" placeholder="New answer" class="inp" style="position: relative; left: 85px;">
+    </div>
+    <div>
+        <input name="question2" type="text" placeholder="What is the name of your childhood best friend?" size="42" class="inp">
+    </div>
+    <div>
+        <input name="answer2" type="text" placeholder="New answer" class="inp" style="position: relative; left: 75px;">
+    </div>
+    <div>
+        <button type="submit" class="bttn" style="position: relative; left: 70px;">Change security questions</button>
+    </div>
+</form>
+
+</div>
+{% endblock %}

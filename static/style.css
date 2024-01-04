@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar size on large screen */
+
+@media (min-width: 768px) {
+  .navbar {
+    height:65px;
+  }
+}
+
+.contain {
+
+  width:100%;
+  height: 100vh;
+  margin:0;
+
+  }
+
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width:100%;
+  height: 100vh;
+  margin-left: 0px;
+
+}
+
+
+.accordion-item button {
+    width:100%;
+    background-color: #E6E6FA;
+
+}
+
+
+.logo {
+
+  width: 150px;
+  max-width: 100%;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  height: 100%;
+  padding: 8px;
+  text-align: left;
+  margin: 0;
+  width: 100%;
+
+  }
+
+  .linear-gradient {
+    background: linear-gradient(to bottom, #add8e6, #909ce0);
+  }
+
+  /*navbar button*/
+.btn.btn-outline-success {
+
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 12px;
+}
+
+.btn.btn-outline-success:hover {
+  background-color: lightblue;
+}
+
+/* index, grades ... button  */
+
+.bttn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 5px;
+}
+
+.bttn:hover {
+  filter: brightness(80%); # pour couleur foncer quand hoover
+}
+
+
+.col.right-column {
+
+  background-image: url('/static/pexels-jess-bailey-designs-743986.jpg');
+  background-size: cover;
+
+}
+
+/* left column background image */
+.col.left-column.m-0 {
+  background-image: url('/static/mahbod-akhzami-Fe3xy9C9wow-unsplash.jpg');
+  background-size: cover;
+}
+
+
+.ind {
+  width: 90%;
+  height: 400px;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.ind form {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.ind form div {
+  margin: 8px; /* Add vertical margin to create spacing between elements */
+}
+
+.inp {
+
+  text-align:center;
+  border-radius:5px;
+  height: 30px;
+}
+
+/* pages logreg */
+.containlogreg {
+  background-image: url('/static/pexels-jess-bailey-designs-743986.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width:100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.indlog, .indreg {
+  width: 80%;
+  height: 400px;
+  /* box-sizing: border-box; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+}
+
+/* table styling */
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  margin: auto;
+
+
+}
+
+th, td {
+  background-color: #E6E6FA;
+  border-spacing: 100px;
+  padding: 2px;
+}
+
+  /* mobile devices display */
+  @media (max-width: 767px ) { /* max-width: 767px */
+
+    .row {
+      grid-template-columns: 1fr; /* ici j'ai juste une colonne au lieu de deux au milieu classe contain */
+
+      min-width:116.5%;
+
+    }
+
+    /* page settings */
+    .inp.reg {
+      width:100%;
+    }
+
+    .indreg {
+      display: block;
+    }
+
+    .ind {
+
+      height:200px;
+      margin-top: 10px;
+      width: auto;
+    }
+
+    footer, .navbar, .containlogreg {
+      min-width:116.5%;
+    }
+
+    /* change the order of the elements within the navbar for mobile devices */
+
+    .collapse.navbar-collapse > ul:nth-child(1) li:nth-child(1) {
+      order: 2; /* Change the order for Element 1 */
+    }
+    .collapse.navbar-collapse > ul:nth-child(1) li:nth-child(2) {
+      order: 3; /* Change the order for Element 1 */
+    }
+    .collapse.navbar-collapse > ul:nth-child(1) li:nth-child(3) {
+      order: 4; /* Change the order for Element 1 */
+    }
+    .collapse.navbar-collapse > ul:nth-child(1) li:nth-child(4) {
+      order: 1; /* Change the order for Element 1 */
+    }
+
+
+  }
+
+
+
