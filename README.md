@@ -56,7 +56,7 @@ Each user-side action triggers a server-side reaction. I made sure to cover as m
 
 ## Database structure
 I designed a database to manage the storage and restrivial of users' data. **All the tables in this database can be extended according to users' needs.**
-![databasestructure](/FinalProject/static/IMG_0535-1.png)
+![databasestructure](/static/IMG_0535-1.png)
 
 # Ways to improve the webapp
 When designing this application, I set myself realistic goals in terms of my knowledge and within the timeframe I gave myself. And so, several points can and will be improved in the future.
