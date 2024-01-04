@@ -58,7 +58,7 @@ Chaque action côté utilisateur déclenche une réaction côté serveur. J'ai f
 
 ## Structure base de données
 J'ai conçu une base de données pour gérer le stockage et la restitution des données aux utilisateurs. **Toutes les tables de cette base de données sont extensibles selon les besoins de l'utilisateur.**
-![databasestructure](/FinalProject/static/IMG_0535-1.png)
+![databasestructure](/static/IMG_0535-1.png)
 
 # Améliorations possibles
 En développant cette application, je me suis fixé des objectifs atteignables au vu de mes connaissances et dans un laps de temps que je m'étais donné. Et donc, plusieurs points peuvent être améliorés et le seront dans le futur.
